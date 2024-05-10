@@ -12,11 +12,11 @@ namespace FilePower2
             string path = $"FilePower2/{args[0]}";
             StreamWriter sw = new StreamWriter(path);
 
-            string input = "Start!";
+            string input = Console.ReadLine();
             while (input != "")
             {
-                input = Console.ReadLine();
                 sw.WriteLine(input);
+                input = Console.ReadLine();
             }
             sw.Close();
         }
