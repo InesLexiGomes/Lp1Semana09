@@ -19,6 +19,27 @@ namespace IntCollections
                 s = $"{s} {i},";
             }
             Console.WriteLine(s);
+            
+            s = "Stack:";
+            foreach (int i in stack)
+            {
+                s = $"{s} {i},";
+            }
+            Console.WriteLine(s);
+
+            s = "Queue:";
+            foreach (int i in queue)
+            {
+                s = $"{s} {i},";
+            }
+            Console.WriteLine(s);
+
+            s = "Hash Set:";
+            foreach (int i in hash)
+            {
+                s = $"{s} {i},";
+            }
+            Console.WriteLine(s);
 
         }
     }
