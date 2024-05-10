@@ -14,5 +14,18 @@ namespace EqualPlayer
         PClass = pClass;
         Name = name;
         }
+
+        public override int GetHashCode()
+        {
+            return PClass.GetHashCode() ^ Name.GetHashCode();
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj.GetHashCode() != GetHashCode())
+                return false;
+            else
+                return true;
+        }
     }
 }
