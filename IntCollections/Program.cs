@@ -13,33 +13,33 @@ namespace IntCollections
             Queue<int> queue = new Queue<int>(list);
             HashSet<int> hash = new HashSet<int>(list);
 
-            string s = "List:";
+            Console.Write("List:");
             foreach (int i in list)
             {
-                s = $"{s} {i},";
+                Console.Write($" {i},");
             }
-            Console.WriteLine(s);
-            
-            s = "Stack:";
+            Console.WriteLine("");
+
+            Console.Write("Stack:");
             foreach (int i in stack)
             {
-                s = $"{s} {i},";
+                Console.Write($" {i},");
             }
-            Console.WriteLine(s);
+            Console.WriteLine("");
 
-            s = "Queue:";
+            Console.Write("Queue:");
             foreach (int i in queue)
             {
-                s = $"{s} {i},";
+                Console.Write($" {i},");
             }
-            Console.WriteLine(s);
+            Console.WriteLine("");
 
-            s = "Hash Set:";
+            Console.Write("HashSet:");
             foreach (int i in hash)
             {
-                s = $"{s} {i},";
+                Console.Write($" {i},");
             }
-            Console.WriteLine(s);
+            Console.WriteLine("");
 
         }
     }
