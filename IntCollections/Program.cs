@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace IntCollections
 {
@@ -7,12 +8,18 @@ namespace IntCollections
     {
         static void Main(string[] args)
         {
-            int[] ints= {1, 10,-30, 10,-5};
-            List<int> list = new List<int>();
-            Stack<int> stack = new Stack<int>();
-            Queue<int> queue = new Queue<int>();
-            HashSet<int> hash = new HashSet<int>();
-            
+            List<int> list = new List<int>() {1, 10,-30, 10,-5};
+            Stack<int> stack = new Stack<int>(list);
+            Queue<int> queue = new Queue<int>(list);
+            HashSet<int> hash = new HashSet<int>(list);
+
+            string s = "List:";
+            foreach (int i in list)
+            {
+                s = $"{s} {i},";
+            }
+            Console.WriteLine(s);
+
         }
     }
 }
