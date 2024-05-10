@@ -18,7 +18,6 @@ namespace FilePower2
                 sw.WriteLine(input);
                 input = Console.ReadLine();
             }
-            sw.Close();
         }
     }
 }
