@@ -10,7 +10,7 @@ namespace FilePower2
         static void Main(string[] args)
         {
             string path = $"FilePower2/{args[0]}";
-            StreamWriter sw = new StreamWriter(path);
+            using StreamWriter sw = new StreamWriter(path);
 
             string input = Console.ReadLine();
             while (input != "")
